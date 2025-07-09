@@ -95,3 +95,20 @@ The user has to define their own variables and functions to tally the desired qu
 ## Multithreading
 
 Multithreaded runs have not yet been implemented.
+
+## Installation on Mac Os since last update (for 11.4+ versions)
+
+Run the following commands:
+```sh
+cmake -DCMAKE_INSTALL_PREFIX=../geant4-vXXX-install -DGEANT4_USE_QT_QT5=ON -DCMAKE_INSTALL_RPATH_USE_LINK_PATH=ON ../geant4-vXXX
+cmake -DGEANT4_INSTALL_DATA=ON .
+make -j 12
+make install
+```
+
+## Troubleshooting
+
+For linker problems with moose:
+```sh
+install_name_tool -delete_rpath path/to/moose/lib path/to/lib/libG4withproblem.dylib
+```
