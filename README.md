@@ -1,3 +1,10 @@
+> [!WARNING]
+> **This repository has been archived and is no longer maintained.**
+> The code is provided for historical reference and may contain unpatched
+> or unknown vulnerabilities. It should not be used in production systems.
+
+---
+
 Copyright 2025, Battelle Energy Alliance, LLC, ALL RIGHTS RESERVED
 
 # ALFRED: ALl particle in Fission Reactor - Energy Deposition
